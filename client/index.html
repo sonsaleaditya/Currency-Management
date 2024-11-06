@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">HODLINFO</div>
+            <div class="controls">
+                <div class="buttons">
+                    <button id="currency" class="button">INR</button>
+                    <button id="crypto" class="button">BTC</button>
+                    <button id="action" class="button">BUY BTC</button>
+                </div>
+                <div class="countdown-circle">
+                    <span id="countdown">59</span>
+                </div>
+                <button class="connect-button">
+                    <span class="telegram-icon">📱</span> Connect to Telegram
+                </button>
+                <div class="mode-toggle-container" id="mode-toggle-container">
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="best-price">
+                <p class="best-price-title">Best Price to Trade:</p>
+                <p class="price" id="best-price">₹0.00</p>
+                <p class="average">Average BTC/INR net price including commission</p>
+            </section>
+
+            <section class="platform-info">
+                <table>
+                    <thead>
+                        <tr class="header-row">
+                            <th>#</th>
+                            <th>Platform</th>
+                            <th>Last Traded Price</th>
+                            <th>Buy/Sell Price</th>
+                            <th>Difference</th>
+                            <th>Savings</th>
+                        </tr>
+                    </thead>
+                    <tbody id="price-table-body">
+                        <!-- Data will be dynamically added here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
